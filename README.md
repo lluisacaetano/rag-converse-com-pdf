@@ -74,3 +74,4 @@ RESPOSTA: Bike fitting é um processo de ajuste...
 ## PDF Utilizado
 
 - `bikefitting.pdf` - Documento sobre Bike Fitting
+

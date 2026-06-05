@@ -1,4 +1,4 @@
-# Demo RAG - Converse com PDF sobre Bike Fitting
+# Demo RAG - Versão sem modo interativo
 
 import os
 import warnings
@@ -10,13 +10,15 @@ from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 
 def main():
+    caminho_pdf = "./Bike Fitting- Efeito no desempenho e na incidência de lesões.pdf"
+
     print("=" * 50)
     print("SISTEMA RAG GRATUITO COM OLLAMA")
     print("=" * 50)
 
     # 1. Carregar PDF
-    print("\nCarregando PDF...")
-    loader = PyPDFLoader("./bikefitting.pdf")
+    print(f"\nCarregando PDF...")
+    loader = PyPDFLoader(caminho_pdf)
     documentos = loader.load()
     print(f"PDF carregado com {len(documentos)} página(s)")
 
@@ -57,7 +59,7 @@ def main():
     ]
 
     for pergunta in perguntas:
-        print(f"\nPERGUNTA: {pergunta}")
+        print(f"\n PERGUNTA: {pergunta}")
         print("-" * 50)
 
         # Buscar contexto relevante

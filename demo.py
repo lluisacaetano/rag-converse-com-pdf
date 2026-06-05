@@ -10,7 +10,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 
 def main():
-    caminho_pdf = "./Bike Fitting- Efeito no desempenho e na incidência de lesões.pdf"
+    caminho_pdf = "./bikefitting.pdf"
 
     print("=" * 50)
     print("SISTEMA RAG GRATUITO COM OLLAMA")

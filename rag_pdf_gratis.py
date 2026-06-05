@@ -76,7 +76,7 @@ Resposta:"""
 
 def main():
     # Caminho do PDF
-    caminho_pdf = "./Bike Fitting- Efeito no desempenho e na incidência de lesões.pdf"
+    caminho_pdf = "./bikefitting.pdf"
 
     # Verificar se o PDF existe
     if not os.path.exists(caminho_pdf):
